@@ -1,0 +1,366 @@
+:root {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+/* Sharp high-quality image rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+}
+
+/* Preloader (Cinematic Solid Black screen with a single glowing line) */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 9999;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 1.2s;
+}
+
+#preloader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-bar-bg {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.02);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.loader-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ec4899, #ef4444, #f43f5e);
+  box-shadow: 0 0 10px rgba(244, 63, 94, 0.6);
+  transition: width 0.1s linear;
+}
+
+/* Sticky Pinning Wrapper for opening scroll animation */
+#animation-wrapper {
+  position: relative;
+  height: 600vh; /* Determines the duration of the scroll animation */
+  width: 100%;
+  background-color: #000;
+}
+
+/* Sticky Canvas Element */
+#canvas-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#scroll-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Custom CSS Classes from code.html */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.frosted-glass {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.text-shadow-premium {
+  text-shadow: 0 2px 10px rgba(184, 0, 73, 0.1);
+}
+
+.gold-accent-border {
+  border-bottom: 2px solid #745b00;
+  transition: all 0.25s ease-out;
+}
+
+.gold-accent-border:hover {
+  border-bottom-color: #b80049;
+}
+
+.hero-glow-shadow {
+  text-shadow: 0 0 20px rgba(236, 72, 153, 0.4), 0 0 40px rgba(184, 0, 73, 0.2);
+}
+
+/* Floating Navigation Bar Styles */
+#main-nav {
+  backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#main-nav.scrolled {
+  backdrop-filter: blur(0px);
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #b80049;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #b80049 !important;
+}
+
+/* Light Theme overrides when scrolling past the scroll animation wrapper */
+#main-nav.light-theme {
+  backdrop-filter: blur(16px);
+  background-color: rgba(254, 248, 249, 0.85);
+  border-bottom: 1px solid rgba(184, 0, 73, 0.1);
+  box-shadow: 0 10px 30px rgba(184, 0, 73, 0.05);
+}
+
+#main-nav.light-theme .nav-link {
+  color: rgba(29, 27, 28, 0.7) !important;
+}
+
+#main-nav.light-theme .nav-link:hover,
+#main-nav.light-theme .nav-link.active {
+  color: #b80049 !important;
+}
+
+#main-nav.light-theme #mobile-menu-toggle {
+  color: #1d1b1c;
+}
+
+/* Hamburger menu styles */
+#mobile-menu-toggle span {
+  display: block;
+}
+
+#mobile-menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#mobile-menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Fullscreen mobile overlay */
+#mobile-menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* --- Timeline Journey --- */
+.timeline-container {
+  position: relative;
+}
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 2px;
+  height: 100%;
+  background: rgba(184, 0, 73, 0.1);
+  z-index: 1;
+}
+.timeline-line-fill {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 2px;
+  height: 0%;
+  background: #b80049;
+  z-index: 2;
+  transition: height 0.1s linear;
+}
+@media (min-width: 768px) {
+  .timeline-line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline-line-fill {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* --- Infinite Testimonial Marquee --- */
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* --- Accordion FAQ Transitions --- */
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease;
+  overflow: hidden;
+}
+.accordion-content.open {
+  grid-template-rows: 1fr;
+}
+
+/* --- Custom Scrollbar for Carousel --- */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* --- Leaflet Map Overrides --- */
+.leaflet-container {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  background-color: #f2eced !important;
+  z-index: 1;
+}
+
+/* --- Glassmorphism Cards --- */
+.glass-panel {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(184, 0, 73, 0.08);
+}
+.dark .glass-panel {
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --- Floating Widgets --- */
+.floating-action-btn {
+  box-shadow: 0 4px 20px rgba(184, 0, 73, 0.15);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.floating-action-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* --- Form Checkmark Success Animation --- */
+@keyframes stroke {
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes scale-checkmark {
+  0%, 100% { transform: none; }
+  50% { transform: scale3d(1.1, 1.1, 1); }
+}
+@keyframes fill-checkmark {
+  100% { box-shadow: inset 0px 0px 0px 30px #b80049; }
+}
+
+.checkmark-svg {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #b80049;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #b80049;
+  animation: fill-checkmark .4s ease-in-out .4s forwards, scale-checkmark .3s ease-in-out .9s both;
+  margin: 0 auto;
+}
+
+.checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #b80049;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  stroke: #fff;
+  fill: none;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+/* --- Instagram Grid Layout & Stagger --- */
+#instagram-grid {
+  will-change: transform, opacity;
+}
+
+#instagram-lightbox img {
+  user-select: none;
+}
+

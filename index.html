@@ -1,0 +1,1701 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Best Practices -->
+    <title>Amul Kool Rose - Experience the Exotic Bloom</title>
+    <meta name="description" content="Experience the refreshing fusion of pure, chilled milk and the fragrant essence of real rose petals in an interactive cinematic scroll animation." />
+    <meta name="keywords" content="Amul Kool, Kool Rose, exotic bloom, rose milk, scroll animation, luxury commercial, responsive design" />
+    
+    <!-- Tailwind and Google Fonts from code.html -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Leaflet.js for Interactive Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Tailwind Custom Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "on-tertiary-fixed": "#2e150b",
+                "surface-container-lowest": "#ffffff",
+                "surface-bright": "#fef8f9",
+                "primary": "#b80049",
+                "on-primary-container": "#fffbff",
+                "surface-container-low": "#f8f2f3",
+                "outline": "#8f6f73",
+                "on-secondary": "#ffffff",
+                "tertiary-fixed-dim": "#ebbcac",
+                "tertiary": "#775447",
+                "error-container": "#ffdad6",
+                "on-surface-variant": "#5b3f43",
+                "error": "#ba1a1a",
+                "inverse-on-surface": "#f5eff0",
+                "secondary-fixed": "#ffe08d",
+                "surface-container-highest": "#e7e1e2",
+                "primary-fixed": "#ffd9de",
+                "primary-fixed-dim": "#ffb2be",
+                "primary-container": "#e2165f",
+                "on-surface": "#1d1b1c",
+                "surface-container": "#f2eced",
+                "on-tertiary-container": "#fffbff",
+                "secondary-container": "#ffd65e",
+                "surface-tint": "#bc004b",
+                "on-primary-fixed-variant": "#900038",
+                "on-secondary-fixed-variant": "#584400",
+                "on-primary": "#ffffff",
+                "on-error": "#ffffff",
+                "tertiary-fixed": "#ffdbcf",
+                "tertiary-container": "#926c5e",
+                "surface-variant": "#e7e1e2",
+                "inverse-surface": "#323031",
+                "inverse-primary": "#ffb2be",
+                "on-tertiary-fixed-variant": "#603f33",
+                "background": "#fef8f9",
+                "on-background": "#1d1b1c",
+                "on-error-container": "#93000a",
+                "surface-container-high": "#ece7e8",
+                "outline-variant": "#e4bdc2",
+                "on-secondary-fixed": "#241a00",
+                "secondary-fixed-dim": "#eac24b",
+                "surface-dim": "#ded9da",
+                "surface": "#fef8f9",
+                "on-secondary-container": "#755c00",
+                "on-tertiary": "#ffffff",
+                "secondary": "#745b00",
+                "on-primary-fixed": "#400014"
+              },
+              "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+              },
+              "spacing": {
+                "gutter": "24px",
+                "margin-mobile": "16px",
+                "base": "8px",
+                "margin-desktop": "48px",
+                "container-max": "1280px"
+              },
+              "fontFamily": {
+                "headline-lg": ["Plus Jakarta Sans"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "body-sm": ["Plus Jakarta Sans"],
+                "display-lg": ["Plus Jakarta Sans"],
+                "headline-lg-mobile": ["Plus Jakarta Sans"],
+                "label-caps": ["Space Grotesk"],
+                "title-md": ["Plus Jakarta Sans"]
+              }
+            }
+          }
+        }
+    </script>
+  </head>
+  <body class="bg-background text-on-background selection:bg-primary-fixed">
+    <!-- Floating Navigation Bar -->
+    <header id="main-nav" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+      <nav class="mx-auto max-w-[1280px] px-6 h-20 flex justify-between items-center relative" aria-label="Main Navigation">
+        <!-- Brand Logo (Left) -->
+        <a href="#animation-wrapper" class="flex items-center font-bold transition-colors" style="font-family: 'Playfair Display', serif; font-weight: 700; color: #b80049; font-size: 1.5rem; line-height: 1;" id="nav-brand">
+          Amul Kool <span style="font-size: 0.45em; font-family: 'Space Grotesk', sans-serif; font-weight: 900; color: #b49a2b; letter-spacing: 1.5px; margin-left: 0.5em; text-transform: uppercase; display: inline-block; vertical-align: middle;">GOLD</span>
+        </a>
+        
+        <!-- Desktop Menu Items (Centered) -->
+        <ul class="hidden md:flex items-center gap-8 text-sm font-semibold font-label-caps absolute left-1/2 -translate-x-1/2" id="desktop-menu">
+          <li><a href="#section-benefits" class="nav-link py-2 active" data-section="section-benefits">Features</a></li>
+          <li><a href="#section-ingredients" class="nav-link py-2" data-section="section-ingredients">Ingredients</a></li>
+          <li><a href="#section-gallery" class="nav-link py-2" data-section="section-gallery">Refreshment</a></li>
+          <li><a href="#section-locator" class="nav-link py-2" data-section="section-locator">Store Locator</a></li>
+        </ul>
+
+        <!-- Action Button (Right) -->
+        <div class="hidden md:block">
+          <button class="flex min-w-[110px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary-container hover:scale-105 transition-all duration-300" type="button" onclick="document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });">
+            Shop Now
+          </button>
+        </div>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="md:hidden flex flex-col justify-between w-6 h-4 text-white focus:outline-none" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-menu-overlay">
+          <span class="w-full h-0.5 bg-current transition-all duration-300 origin-left"></span>
+          <span class="w-full h-0.5 bg-current transition-all duration-300"></span>
+          <span class="w-full h-0.5 bg-current transition-all duration-300 origin-left"></span>
+        </button>
+      </nav>
+      
+      <!-- Fullscreen Mobile Menu Overlay -->
+      <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/95 z-40 flex flex-col justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300" role="dialog" aria-modal="true" aria-label="Mobile Navigation Overlay">
+        <ul class="flex flex-col gap-8 text-2xl font-bold text-white uppercase text-center font-label-caps">
+          <li><a href="#section-benefits" class="mobile-nav-link hover:text-primary transition-colors" data-section="section-benefits">Features</a></li>
+          <li><a href="#section-ingredients" class="mobile-nav-link hover:text-primary transition-colors" data-section="section-ingredients">Ingredients</a></li>
+          <li><a href="#section-gallery" class="mobile-nav-link hover:text-primary transition-colors" data-section="section-gallery">Refreshment</a></li>
+          <li><a href="#section-locator" class="mobile-nav-link hover:text-primary transition-colors" data-section="section-locator">Store Locator</a></li>
+          <li class="pt-4">
+            <button class="flex min-w-[140px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-base font-bold shadow-lg hover:bg-primary-container" type="button" onclick="document.getElementById('mobile-menu-toggle').click(); document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });">
+              Shop Now
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Cinematic Preloader -->
+    <div id="preloader" role="presentation">
+      <div class="loader-bar-bg">
+        <div class="loader-bar-fill" id="load-progress-bar"></div>
+      </div>
+    </div>
+
+    <!-- Scroll Animation Section Wrapper (Opening Section) -->
+    <div id="animation-wrapper">
+      <div id="canvas-container">
+        <canvas id="scroll-canvas"></canvas>
+        
+        <!-- Hero Text Overlay centered over the canvas -->
+        <div id="hero-text-overlay" class="absolute inset-0 flex flex-col justify-center items-center pointer-events-none z-10 text-center px-4" style="opacity: 0;">
+          <h1 class="text-primary text-6xl sm:text-8xl md:text-9xl font-bold tracking-tight uppercase" style="font-family: 'Playfair Display', serif; font-weight: 700; color: #b80049; font-size: clamp(3rem, 10vw, 7.5rem);">
+            Amul Kool
+          </h1>
+          <p class="font-label-caps text-secondary tracking-widest uppercase text-sm sm:text-base md:text-lg mt-4" style="color: #745b00;">
+            The Taste of India
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Website Content Sections Appended from code.html (excluding Navbar and Hero) -->
+    <div class="relative flex h-auto w-full flex-col bg-background group/design-root overflow-x-hidden z-10">
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[1280px] flex-1" id="website-content">
+            
+            <!-- Section 2: Product Benefits -->
+            <section class="py-16 px-4" id="section-benefits">
+              <div class="text-center mb-12">
+                <h2 class="text-on-background text-3xl font-headline-lg mb-2">Why You'll Love It</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col gap-5 rounded-2xl border border-outline-variant bg-surface-container-low p-8 transition-all hover:shadow-xl hover:-translate-y-1">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary-fixed text-primary">
+                    <span class="material-symbols-outlined" style="font-size: 32px;">eco</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-on-background text-xl font-title-md">Naturally Refreshing</h3>
+                    <p class="text-on-surface-variant text-base font-body-lg">
+                      The ultimate thirst quencher designed to revitalize your senses with every chilled sip, any time of day.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-5 rounded-2xl border border-outline-variant bg-surface-container-low p-8 transition-all hover:shadow-xl hover:-translate-y-1">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary-fixed text-secondary">
+                    <span class="material-symbols-outlined" style="font-size: 32px;">nutrition</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-on-background text-xl font-title-md">Nutritious Milk</h3>
+                    <p class="text-on-surface-variant text-base font-body-lg">
+                      Packed with the wholesome goodness of high-quality dairy, providing essential proteins and calcium for your daily needs.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-5 rounded-2xl border border-outline-variant bg-surface-container-low p-8 transition-all hover:shadow-xl hover:-translate-y-1">
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary-fixed-dim text-on-primary-fixed">
+                    <span class="material-symbols-outlined" style="font-size: 32px;">local_florist</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <h3 class="text-on-background text-xl font-title-md">Exotic Rose Flavor</h3>
+                    <p class="text-on-surface-variant text-base font-body-lg">
+                      Infused with natural rose extracts distilled to perfection, offering a delicate floral aroma that lingers delightfully.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 1: Premium Brand Story -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-brand-story">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Image Parallax / Reveal Container -->
+                <div class="relative overflow-hidden rounded-[2.5rem] shadow-2xl aspect-[4/3] group border-4 border-white">
+                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" 
+                       alt="Amul Kool Heritage" 
+                       class="w-full h-full object-cover scale-110 transition-transform duration-[2000ms] group-hover:scale-100 ease-out" 
+                       id="brand-story-img"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#b80049]/35 to-transparent"></div>
+                  <div class="absolute bottom-8 left-8 text-white">
+                    <p class="font-label-caps text-xs tracking-widest uppercase text-white/80">Est. 1946</p>
+                    <h3 class="text-2xl font-bold uppercase" style="font-family: 'Playfair Display', serif;">The Taste of India</h3>
+                  </div>
+                </div>
+                <!-- Content Column -->
+                <div class="space-y-8">
+                  <div class="space-y-4">
+                    <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Our Heritage</span>
+                    <h2 class="text-on-background text-4xl sm:text-5xl font-bold leading-tight" style="font-family: 'Playfair Display', serif;">
+                      India's Love for <br/>
+                      <span class="text-primary">Flavoured Milk</span>
+                    </h2>
+                    <div class="w-16 h-1 bg-primary rounded-full mt-2"></div>
+                  </div>
+                  <p class="text-on-surface-variant text-lg font-body-lg leading-relaxed">
+                    For generations, Amul has been synonymous with purity, trust, and quality. Amul Kool represents the evolution of this heritage, transforming pure fresh milk into a delicious, refreshing beverage loved by millions across the nation.
+                  </p>
+                  <p class="text-on-surface-variant text-base font-body-lg leading-relaxed">
+                    Sourced directly from our network of local dairy farms, every bottle represents our absolute commitment to dairy excellence. We combine state-of-the-art hygienic processing with authentic ingredients to capture a refreshing taste experience in every single sip.
+                  </p>
+                  <div class="pt-4">
+                    <button class="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all duration-300 group" onclick="document.getElementById('section-timeline').scrollIntoView({ behavior: 'smooth' });">
+                      Explore Our Journey
+                      <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 2: Farm to Bottle Journey -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-timeline">
+              <div class="text-center mb-16">
+                <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Traceability</span>
+                <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">Farm to Bottle Journey</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+              </div>
+
+              <!-- Journey Timeline Container -->
+              <div class="timeline-container max-w-4xl mx-auto py-10 px-4">
+                <!-- Timeline vertical lines -->
+                <div class="timeline-line"></div>
+                <div class="timeline-line-fill" id="timeline-scroll-fill"></div>
+
+                <!-- Timeline Step 1 -->
+                <div class="grid grid-cols-[48px_1fr] md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-x-12 mb-16 timeline-step relative">
+                  <!-- Left side card on desktop -->
+                  <div class="w-full md:text-right order-2 md:order-1">
+                    <h3 class="text-xl font-bold text-on-background">1. Fresh Milk Sourcing</h3>
+                    <p class="text-on-surface-variant mt-2 text-sm md:text-base">Pure milk is collected daily from over 18,600 village cooperative societies at sunrise.</p>
+                  </div>
+                  <!-- Center point -->
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white z-10 shrink-0 shadow-lg order-1 md:order-2 justify-self-start md:justify-self-center">
+                    <span class="material-symbols-outlined">agriculture</span>
+                  </div>
+                  <!-- Empty block for alignment on desktop -->
+                  <div class="hidden md:block order-3"></div>
+                </div>
+
+                <!-- Timeline Step 2 -->
+                <div class="grid grid-cols-[48px_1fr] md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-x-12 mb-16 timeline-step relative">
+                  <!-- Empty block for alignment on desktop -->
+                  <div class="hidden md:block order-1"></div>
+                  <!-- Center point -->
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white z-10 shrink-0 shadow-lg order-1 md:order-2 justify-self-start md:justify-self-center">
+                    <span class="material-symbols-outlined">biotech</span>
+                  </div>
+                  <!-- Right side card on desktop -->
+                  <div class="w-full md:text-left order-2 md:order-3">
+                    <h3 class="text-xl font-bold text-on-background">2. Quality Testing</h3>
+                    <p class="text-on-surface-variant mt-2 text-sm md:text-base">Every batch undergoes rigorous quality checks for purity, composition, and safety standard certifications.</p>
+                  </div>
+                </div>
+
+                <!-- Timeline Step 3 -->
+                <div class="grid grid-cols-[48px_1fr] md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-x-12 mb-16 timeline-step relative">
+                  <!-- Left side card on desktop -->
+                  <div class="w-full md:text-right order-2 md:order-1">
+                    <h3 class="text-xl font-bold text-on-background">3. Flavor Development</h3>
+                    <p class="text-on-surface-variant mt-2 text-sm md:text-base">Natural flower extracts and premium ingredients are slowly blended with sterilized milk.</p>
+                  </div>
+                  <!-- Center point -->
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white z-10 shrink-0 shadow-lg order-1 md:order-2 justify-self-start md:justify-self-center">
+                    <span class="material-symbols-outlined">blender</span>
+                  </div>
+                  <!-- Empty block for alignment on desktop -->
+                  <div class="hidden md:block order-3"></div>
+                </div>
+
+                <!-- Timeline Step 4 -->
+                <div class="grid grid-cols-[48px_1fr] md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-x-12 mb-16 timeline-step relative">
+                  <!-- Empty block for alignment on desktop -->
+                  <div class="hidden md:block order-1"></div>
+                  <!-- Center point -->
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white z-10 shrink-0 shadow-lg order-1 md:order-2 justify-self-start md:justify-self-center">
+                    <span class="material-symbols-outlined">thermostat</span>
+                  </div>
+                  <!-- Right side card on desktop -->
+                  <div class="w-full md:text-left order-2 md:order-3">
+                    <h3 class="text-xl font-bold text-on-background">4. Hygienic Processing</h3>
+                    <p class="text-on-surface-variant mt-2 text-sm md:text-base">Processed in sterile systems under Ultra High Temperature (UHT) conditions to remove impurities.</p>
+                  </div>
+                </div>
+
+                <!-- Timeline Step 5 -->
+                <div class="grid grid-cols-[48px_1fr] md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-x-12 mb-16 timeline-step relative">
+                  <!-- Left side card on desktop -->
+                  <div class="w-full md:text-right order-2 md:order-1">
+                    <h3 class="text-xl font-bold text-on-background">5. Precision Packaging</h3>
+                    <p class="text-on-surface-variant mt-2 text-sm md:text-base">Bottled in fully automated, touch-free facilities and hermetically sealed to preserve freshness.</p>
+                  </div>
+                  <!-- Center point -->
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white z-10 shrink-0 shadow-lg order-1 md:order-2 justify-self-start md:justify-self-center">
+                    <span class="material-symbols-outlined">inventory_2</span>
+                  </div>
+                  <!-- Empty block for alignment on desktop -->
+                  <div class="hidden md:block order-3"></div>
+                </div>
+
+                <!-- Timeline Step 6 -->
+                <div class="grid grid-cols-[48px_1fr] md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-x-12 mb-16 timeline-step relative">
+                  <!-- Empty block for alignment on desktop -->
+                  <div class="hidden md:block order-1"></div>
+                  <!-- Center point -->
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white z-10 shrink-0 shadow-lg order-1 md:order-2 justify-self-start md:justify-self-center">
+                    <span class="material-symbols-outlined">local_shipping</span>
+                  </div>
+                  <!-- Right side card on desktop -->
+                  <div class="w-full md:text-left order-2 md:order-3">
+                    <h3 class="text-xl font-bold text-on-background">6. Cold Chain Distribution</h3>
+                    <p class="text-on-surface-variant mt-2 text-sm md:text-base">Shipped in climate-controlled fleets to thousands of locations across major cities nationwide.</p>
+                  </div>
+                </div>
+
+                <!-- Timeline Step 7 -->
+                <div class="grid grid-cols-[48px_1fr] md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-x-12 timeline-step relative">
+                  <!-- Left side card on desktop -->
+                  <div class="w-full md:text-right order-2 md:order-1">
+                    <h3 class="text-xl font-bold text-on-background">7. Customer Enjoyment</h3>
+                    <p class="text-on-surface-variant mt-2 text-sm md:text-base">Popped open, shared, and enjoyed ice cold by customers celebrating daily refreshing breaks.</p>
+                  </div>
+                  <!-- Center point -->
+                  <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white z-10 shrink-0 shadow-lg order-1 md:order-2 justify-self-start md:justify-self-center">
+                    <span class="material-symbols-outlined">celebration</span>
+                  </div>
+                  <!-- Empty block for alignment on desktop -->
+                  <div class="hidden md:block order-3"></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 14: Trust & Quality Section -->
+            <section class="py-12 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-trust">
+              <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <!-- Badge 1 -->
+                <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-2xl border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                  <span class="material-symbols-outlined text-primary text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">verified</span>
+                  <h4 class="font-bold text-sm text-on-background uppercase tracking-wider font-label-caps">Quality Tested</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">100% Certified Safe</p>
+                </div>
+                <!-- Badge 2 -->
+                <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-2xl border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                  <span class="material-symbols-outlined text-secondary text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">local_laundry_service</span>
+                  <h4 class="font-bold text-sm text-on-background uppercase tracking-wider font-label-caps">Fresh Dairy</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Sourced Daily</p>
+                </div>
+                <!-- Badge 3 -->
+                <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-2xl border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                  <span class="material-symbols-outlined text-primary text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">clean_hands</span>
+                  <h4 class="font-bold text-sm text-on-background uppercase tracking-wider font-label-caps">Hygienic Production</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Zero Touch Bottling</p>
+                </div>
+                <!-- Badge 4 -->
+                <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-2xl border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                  <span class="material-symbols-outlined text-secondary text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">nutrition</span>
+                  <h4 class="font-bold text-sm text-on-background uppercase tracking-wider font-label-caps">Premium Ingredients</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">No Preservatives</p>
+                </div>
+                <!-- Badge 5 -->
+                <div class="flex flex-col items-center text-center p-6 bg-surface-container-low rounded-2xl border border-outline-variant hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group col-span-2 md:col-span-1">
+                  <span class="material-symbols-outlined text-primary text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">shield_with_heart</span>
+                  <h4 class="font-bold text-sm text-on-background uppercase tracking-wider font-label-caps">Trusted Brand</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">75+ Years of Trust</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 3: Ingredients Showcase -->
+            <section class="py-16 px-4 bg-surface-container-lowest rounded-[2rem] my-16 shadow-sm overflow-hidden" id="section-ingredients">
+              <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="w-full lg:w-1/2 space-y-8 px-4">
+                  <div class="space-y-4">
+                    <h2 class="text-on-background text-4xl font-headline-lg">Crafted with the <br/><span class="text-primary">Finest Ingredients</span></h2>
+                    <p class="text-on-surface-variant text-lg">We believe purity is the foundation of flavor. Every bottle of Amul Kool Rose is a testament to our commitment to quality.</p>
+                  </div>
+                  <div class="space-y-6">
+                    <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-surface-container transition-colors">
+                      <span class="material-symbols-outlined text-secondary pt-1">check_circle</span>
+                      <div>
+                        <h4 class="font-bold text-on-background text-lg">Fresh Dairy Sourcing</h4>
+                        <p class="text-on-surface-variant">Sourced directly from our network of trusted local dairy farmers to ensure maximum freshness and nutritional integrity.</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-surface-container transition-colors">
+                      <span class="material-symbols-outlined text-secondary pt-1">check_circle</span>
+                      <div>
+                        <h4 class="font-bold text-on-background text-lg">Real Rose Essence</h4>
+                        <p class="text-on-surface-variant">We use only natural rose petals, distilled using traditional methods to capture the true, delicate floral fragrance.</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-surface-container transition-colors">
+                      <span class="material-symbols-outlined text-secondary pt-1">check_circle</span>
+                      <div>
+                        <h4 class="font-bold text-on-background text-lg">No Artificial Preservatives</h4>
+                        <p class="text-on-surface-variant">Carefully pasteurized and packaged to maintain peak freshness without the need for harsh chemicals.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+                  <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+                    <img alt="Fresh Milk Pouring" class="w-full h-full object-cover" data-alt="A macro photography shot of fresh, creamy milk being poured into a crystal clear glass. The lighting is soft and ethereal, highlighting the smooth texture and pure white color of the dairy. Scattered around are delicate, fresh pink rose petals and a few golden dewdrops. The scene is bright and airy, following a modern light-mode aesthetic with a palette of chilled cream and soft rose gold accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXty9iVujFgMVF1j5JPl-AMm0vpypbQIaPwVXbv1Rn8_c7G9iL7g18ycBb0JRfB8x6PijRAP5xY6UbEkbavlqyg2rkCU9KXdFIg70U9XuEoU6I62bvwali0TadiJSInrTTjOSZ5PChlqOHedEoDIej42O99lraeoZ2pAy3RHHTjuiSUjnGVLz19d-SV3yGPmm1Pe5cHtzO9Wp-G5HSn6VnnS_Zfuhjlu1rmUq6OyhLIu0uTyO62ss4W5GI_tJKP8ray6bjcpt4dHvL"/>
+                  </div>
+                  <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg mt-8">
+                    <img alt="Real Rose Petals" class="w-full h-full object-cover" data-alt="A close-up artistic arrangement of vibrant, velvet-like rose petals resting on a pristine white surface. The lighting is dramatic yet soft, casting gentle shadows that emphasize the texture of the petals. A few golden sparkles are interspersed among the roses, suggesting premium quality. The color palette is dominated by deep rose pinks and warm golds against a clean, chilled cream background, evoking a sense of luxury and refreshment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwqqmAlWE_9blTQPQgCS6z2p309PNFN5ASYOKZ4cUX3862C9qA5W-BGuT2wIjEvyBKASstThWGJWtlOGUXGxOkY6D6pz-vdqbFba0oLRlj9k3GHg4uoScAvcZMBgfkmcqndfbpGtLyYlHlIYFgoKRuwMM_juw1lDT0vQ5R7o52QJq3Z5a4pSIqFVc5-C_Ti5RtwgomMA_JRG343gXVVe5077n9MJFABkElGwJ517MRuncF0RdPJcmLKlXEQN5vhG01KqExRHf8DMjq"/>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 3: Why Choose Amul Kool (Comparison) -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-comparison">
+              <div class="text-center mb-12">
+                <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Nutrition Duel</span>
+                <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">Amul Kool vs. Regular Soda</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+              </div>
+
+              <!-- Comparison Interactive Layout -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Card 1: Amul Kool -->
+                <div class="rounded-[2.5rem] border border-outline-variant bg-surface-container-low p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 w-48 h-48 bg-primary/10 rounded-full blur-[60px] group-hover:bg-primary/20 transition-all duration-500"></div>
+                  <div class="flex items-center gap-4 mb-8">
+                    <div class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                      <span class="material-symbols-outlined text-4xl font-bold">verified_user</span>
+                    </div>
+                    <div>
+                      <h3 class="text-2xl font-bold text-on-background">Amul Kool</h3>
+                      <p class="text-sm text-primary font-bold uppercase tracking-wider font-label-caps">Healthy & Nutritious</p>
+                    </div>
+                  </div>
+                  <!-- Comparison bars -->
+                  <div class="space-y-6">
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Real Dairy Content</span>
+                        <span>100%</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-primary rounded-full animate-bar" style="width: 100%;"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Protein (per bottle)</span>
+                        <span>6.4g</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-primary rounded-full animate-bar" style="width: 80%;"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Calcium (DV%)</span>
+                        <span>24%</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-primary rounded-full animate-bar" style="width: 75%;"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Vitamins (A & D)</span>
+                        <span>Enriched</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-primary rounded-full animate-bar" style="width: 90%;"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Artificial Additives</span>
+                        <span>None</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-primary rounded-full animate-bar" style="width: 0%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2: Soft Drinks -->
+                <div class="rounded-[2.5rem] border border-outline-variant bg-surface-container-low p-8 md:p-12 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 w-48 h-48 bg-secondary/10 rounded-full blur-[60px] group-hover:bg-secondary/20 transition-all duration-500"></div>
+                  <div class="flex items-center gap-4 mb-8">
+                    <div class="w-16 h-16 rounded-full bg-secondary/10 text-secondary flex items-center justify-center">
+                      <span class="material-symbols-outlined text-4xl font-bold">dangerous</span>
+                    </div>
+                    <div>
+                      <h3 class="text-2xl font-bold text-on-background">Regular Soft Drinks</h3>
+                      <p class="text-sm text-secondary font-bold uppercase tracking-wider font-label-caps">Empty Calories</p>
+                    </div>
+                  </div>
+                  <!-- Comparison bars -->
+                  <div class="space-y-6">
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Real Dairy Content</span>
+                        <span>0%</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-secondary rounded-full animate-bar" style="width: 0%;"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Protein</span>
+                        <span>0g</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-secondary rounded-full animate-bar" style="width: 0%;"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Calcium</span>
+                        <span>0%</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-secondary rounded-full animate-bar" style="width: 0%;"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Chemical Preservatives</span>
+                        <span>High</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-secondary rounded-full animate-bar" style="width: 95%;"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm font-bold text-on-background mb-1">
+                        <span>Refined Sugar</span>
+                        <span>Extreme (~10 spoons)</span>
+                      </div>
+                      <div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div class="h-full bg-secondary rounded-full animate-bar" style="width: 100%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 4: Flavour Showcase Carousel -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-flavours">
+              <div class="text-center mb-12">
+                <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Discover the Range</span>
+                <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">The Flavour Collection</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+              </div>
+
+              <!-- Carousel Controls and Wrapper -->
+              <div class="relative max-w-6xl mx-auto px-4">
+                <!-- Navigation Buttons -->
+                <button class="absolute -left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/90 dark:bg-black/90 shadow-lg flex items-center justify-center text-on-background hover:scale-105 hover:bg-white transition-all border border-outline-variant" id="flavour-prev" aria-label="Previous Flavor">
+                  <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <button class="absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/90 dark:bg-black/90 shadow-lg flex items-center justify-center text-on-background hover:scale-105 hover:bg-white transition-all border border-outline-variant" id="flavour-next" aria-label="Next Flavor">
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+
+                <!-- Swipeable Container -->
+                <div class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory py-4 px-2" id="flavour-carousel">
+                  
+                  <!-- Card 1: Rose -->
+                  <div class="snap-start shrink-0 w-[280px] sm:w-[320px] rounded-[2.5rem] border border-outline-variant bg-surface-container-low p-6 flex flex-col items-center text-center relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#b80049]/10 rounded-full blur-[40px] group-hover:bg-[#b80049]/20 transition-all duration-500"></div>
+                    <div class="w-full aspect-[3/4] mb-6 flex items-center justify-center scale-95 group-hover:scale-100 transition-transform duration-500">
+                      <!-- Rendered bottle preview or placeholder -->
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Rose Flavor" class="h-48 object-contain drop-shadow-xl" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-on-background">Rose</h3>
+                    <p class="text-primary font-bold text-xs uppercase tracking-widest font-label-caps mt-1">Exotic Bloom</p>
+                    <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">
+                      Infused with natural rose extracts distilled to perfection, providing a sweet floral aroma.
+                    </p>
+                  </div>
+
+                  <!-- Card 2: Kesar -->
+                  <div class="snap-start shrink-0 w-[280px] sm:w-[320px] rounded-[2.5rem] border border-outline-variant bg-surface-container-low p-6 flex flex-col items-center text-center relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#f59e0b]/10 rounded-full blur-[40px] group-hover:bg-[#f59e0b]/20 transition-all duration-500"></div>
+                    <div class="w-full aspect-[3/4] mb-6 flex items-center justify-center scale-95 group-hover:scale-100 transition-transform duration-500">
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Kesar Flavor" class="h-48 object-contain filter hue-rotate-[45deg] drop-shadow-xl" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-on-background">Kesar</h3>
+                    <p class="text-[#f59e0b] font-bold text-xs uppercase tracking-widest font-label-caps mt-1">Royal Saffron</p>
+                    <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">
+                      Saffron-enriched milk featuring premium threads harvested for an authentic rich texture.
+                    </p>
+                  </div>
+
+                  <!-- Card 3: Elaichi -->
+                  <div class="snap-start shrink-0 w-[280px] sm:w-[320px] rounded-[2.5rem] border border-outline-variant bg-surface-container-low p-6 flex flex-col items-center text-center relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#10b981]/10 rounded-full blur-[40px] group-hover:bg-[#10b981]/20 transition-all duration-500"></div>
+                    <div class="w-full aspect-[3/4] mb-6 flex items-center justify-center scale-95 group-hover:scale-100 transition-transform duration-500">
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Elaichi Flavor" class="h-48 object-contain filter hue-rotate-[135deg] drop-shadow-xl" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-on-background">Elaichi</h3>
+                    <p class="text-[#10b981] font-bold text-xs uppercase tracking-widest font-label-caps mt-1">Aromatic Cardamom</p>
+                    <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">
+                      Refreshing milk infused with crushed green cardamom seeds for a sweet, spicy cooling effect.
+                    </p>
+                  </div>
+
+                  <!-- Card 4: Badam -->
+                  <div class="snap-start shrink-0 w-[280px] sm:w-[320px] rounded-[2.5rem] border border-outline-variant bg-surface-container-low p-6 flex flex-col items-center text-center relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#d97706]/10 rounded-full blur-[40px] group-hover:bg-[#d97706]/20 transition-all duration-500"></div>
+                    <div class="w-full aspect-[3/4] mb-6 flex items-center justify-center scale-95 group-hover:scale-100 transition-transform duration-500">
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Badam Flavor" class="h-48 object-contain filter hue-rotate-[25deg] drop-shadow-xl" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-on-background">Badam</h3>
+                    <p class="text-[#d97706] font-bold text-xs uppercase tracking-widest font-label-caps mt-1">Rich Almond</p>
+                    <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">
+                      Velvety smooth milk blended with fine almond paste and crushed nuts for energy.
+                    </p>
+                  </div>
+
+                  <!-- Card 5: Chocolate -->
+                  <div class="snap-start shrink-0 w-[280px] sm:w-[320px] rounded-[2.5rem] border border-outline-variant bg-surface-container-low p-6 flex flex-col items-center text-center relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#78350f]/10 rounded-full blur-[40px] group-hover:bg-[#78350f]/20 transition-all duration-500"></div>
+                    <div class="w-full aspect-[3/4] mb-6 flex items-center justify-center scale-95 group-hover:scale-100 transition-transform duration-500">
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Chocolate Flavor" class="h-48 object-contain filter saturate-[0.2] brightness-75 drop-shadow-xl" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-on-background">Chocolate</h3>
+                    <p class="text-[#78350f] font-bold text-xs uppercase tracking-widest font-label-caps mt-1">Rich Cocoa</p>
+                    <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">
+                      Indulgent, creamy milk infused with Dutch-processed cocoa powder for a classic sweet drink.
+                    </p>
+                  </div>
+
+                  <!-- Card 6: Coffee -->
+                  <div class="snap-start shrink-0 w-[280px] sm:w-[320px] rounded-[2.5rem] border border-outline-variant bg-surface-container-low p-6 flex flex-col items-center text-center relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#3b2314]/10 rounded-full blur-[40px] group-hover:bg-[#3b2314]/20 transition-all duration-500"></div>
+                    <div class="w-full aspect-[3/4] mb-6 flex items-center justify-center scale-95 group-hover:scale-100 transition-transform duration-500">
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Coffee Flavor" class="h-48 object-contain filter sepia-[0.8] brightness-50 drop-shadow-xl" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-on-background">Coffee</h3>
+                    <p class="text-[#3b2314] font-bold text-xs uppercase tracking-widest font-label-caps mt-1">Chilled Brew</p>
+                    <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">
+                      A bold kick of premium roasted coffee beans cold-steeped with dairy milk.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 13: Buy Online Section -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10 bg-surface-container-low rounded-[2.5rem] my-16 shadow-inner" id="section-buy">
+              <div class="text-center mb-16">
+                <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Amul Parlor Online</span>
+                <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">Order Chilled Delivery</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+              </div>
+
+              <!-- eCommerce product items grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- Item 1: Single Bottle -->
+                <div class="bg-surface rounded-3xl border border-outline-variant p-6 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" style="background-color: #ffffff;">
+                  <div class="aspect-square rounded-2xl bg-surface-container-low mb-6 flex items-center justify-center overflow-hidden relative">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Single Bottle Rose" class="h-32 object-contain group-hover:scale-110 transition-transform duration-500" />
+                    <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full font-label-caps">Popular</span>
+                  </div>
+                  <h3 class="font-bold text-lg text-on-background">Single Bottle (200ml)</h3>
+                  <p class="text-xs text-on-surface-variant mt-1">Exotic Rose Flavour</p>
+                  <div class="mt-auto pt-6 flex items-center justify-between">
+                    <div>
+                      <span class="text-2xl font-bold text-on-background">₹30</span>
+                    </div>
+                    <!-- Quantity & Button -->
+                    <div class="flex items-center gap-3">
+                      <div class="flex items-center border border-outline-variant rounded-full h-8 px-2 bg-surface">
+                        <button class="qty-btn text-on-surface-variant font-bold px-1 hover:text-primary transition-colors" onclick="const input = this.nextElementSibling; if(parseInt(input.value) > 1) input.value = parseInt(input.value) - 1">-</button>
+                        <input type="text" value="1" readonly class="w-6 text-center text-xs font-bold bg-transparent border-0 p-0 focus:ring-0 text-on-background" />
+                        <button class="qty-btn text-on-surface-variant font-bold px-1 hover:text-primary transition-colors" onclick="const input = this.previousElementSibling; input.value = parseInt(input.value) + 1">+</button>
+                      </div>
+                      <button class="flex size-8 items-center justify-center rounded-full bg-primary text-white hover:scale-105 transition-all shadow-md animate-glow" aria-label="Add to Cart" onclick="alert('Added to cart!');">
+                        <span class="material-symbols-outlined text-sm font-bold">shopping_cart</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2: Pack of 6 -->
+                <div class="bg-surface rounded-3xl border border-outline-variant p-6 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" style="background-color: #ffffff;">
+                  <div class="aspect-square rounded-2xl bg-surface-container-low mb-6 flex items-center justify-center overflow-hidden relative">
+                    <div class="flex -space-x-4">
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Pack of 6 Bottle 1" class="h-28 object-contain" />
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Pack of 6 Bottle 2" class="h-28 object-contain filter hue-rotate-[45deg]" />
+                    </div>
+                    <span class="absolute top-3 left-3 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded-full font-label-caps">Save 5%</span>
+                  </div>
+                  <h3 class="font-bold text-lg text-on-background">Pack of 6 (Variety)</h3>
+                  <p class="text-xs text-on-surface-variant mt-1">Rose, Kesar & Elaichi</p>
+                  <div class="mt-auto pt-6 flex items-center justify-between">
+                    <div>
+                      <span class="text-2xl font-bold text-on-background">₹170</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <div class="flex items-center border border-outline-variant rounded-full h-8 px-2 bg-surface">
+                        <button class="qty-btn text-on-surface-variant font-bold px-1 hover:text-primary transition-colors" onclick="const input = this.nextElementSibling; if(parseInt(input.value) > 1) input.value = parseInt(input.value) - 1">-</button>
+                        <input type="text" value="1" readonly class="w-6 text-center text-xs font-bold bg-transparent border-0 p-0 focus:ring-0 text-on-background" />
+                        <button class="qty-btn text-on-surface-variant font-bold px-1 hover:text-primary transition-colors" onclick="const input = this.previousElementSibling; input.value = parseInt(input.value) + 1">+</button>
+                      </div>
+                      <button class="flex size-8 items-center justify-center rounded-full bg-primary text-white hover:scale-105 transition-all shadow-md" aria-label="Add to Cart" onclick="alert('Added to cart!');">
+                        <span class="material-symbols-outlined text-sm font-bold">shopping_cart</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3: Pack of 12 -->
+                <div class="bg-surface rounded-3xl border border-outline-variant p-6 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" style="background-color: #ffffff;">
+                  <div class="aspect-square rounded-2xl bg-surface-container-low mb-6 flex items-center justify-center overflow-hidden relative">
+                    <div class="flex -space-x-6 scale-90">
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Pack of 12 Bottle 1" class="h-28 object-contain" />
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JWHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Pack of 12 Bottle 2" class="h-28 object-contain filter hue-rotate-[135deg]" />
+                      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Pack of 12 Bottle 3" class="h-28 object-contain filter saturate-[0.2] brightness-75" />
+                    </div>
+                    <span class="absolute top-3 left-3 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded-full font-label-caps">Best Value</span>
+                  </div>
+                  <h3 class="font-bold text-lg text-on-background">Pack of 12 (Party Pack)</h3>
+                  <p class="text-xs text-on-surface-variant mt-1">All 6 Signature Flavours</p>
+                  <div class="mt-auto pt-6 flex items-center justify-between">
+                    <div>
+                      <span class="text-2xl font-bold text-on-background">₹330</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <div class="flex items-center border border-outline-variant rounded-full h-8 px-2 bg-surface">
+                        <button class="qty-btn text-on-surface-variant font-bold px-1 hover:text-primary transition-colors" onclick="const input = this.nextElementSibling; if(parseInt(input.value) > 1) input.value = parseInt(input.value) - 1">-</button>
+                        <input type="text" value="1" readonly class="w-6 text-center text-xs font-bold bg-transparent border-0 p-0 focus:ring-0 text-on-background" />
+                        <button class="qty-btn text-on-surface-variant font-bold px-1 hover:text-primary transition-colors" onclick="const input = this.previousElementSibling; input.value = parseInt(input.value) + 1">+</button>
+                      </div>
+                      <button class="flex size-8 items-center justify-center rounded-full bg-primary text-white hover:scale-105 transition-all shadow-md" aria-label="Add to Cart" onclick="alert('Added to cart!');">
+                        <span class="material-symbols-outlined text-sm font-bold">shopping_cart</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4: Family Pack -->
+                <div class="bg-surface rounded-3xl border border-outline-variant p-6 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" style="background-color: #ffffff;">
+                  <div class="aspect-square rounded-2xl bg-surface-container-low mb-6 flex items-center justify-center overflow-hidden relative">
+                    <div class="flex flex-col items-center">
+                      <div class="flex -space-x-4 scale-90">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Family Pack Bottle 1" class="h-20 object-contain" />
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzDkWzFwmnnVMl6DYFHp5vT5wUU0s9wqOwZkZv8ihDGY9x5ZWnwet-RwKwTOG-0YJrCjPJZTDa37YnpqQElOT2PJZYPpOGK6fb2cifSEQlkv46cyZ0wz5Zw-Oohs4k_jKpF9M8kK2cYHvroBptmqQ_OFGANEInvqFTAO7JUHhibB1OmkUO5F5qyvVSy9SDI10oD0jOYj0cwa-81KdFx-6OL4PpuN4QCUFxzmWAG0_vVkkEUJ3FKSdgFtZ9tH5p8tyFL3g-QIfL9F1" alt="Family Pack Bottle 2" class="h-20 object-contain filter hue-rotate-[45deg]" />
+                      </div>
+                      <p class="text-xs font-bold text-primary font-label-caps mt-1">+ Free Cooler Bag</p>
+                    </div>
+                    <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full font-label-caps">Hot Deal</span>
+                  </div>
+                  <h3 class="font-bold text-lg text-on-background">Family Bundle (Pack of 24)</h3>
+                  <p class="text-xs text-on-surface-variant mt-1">Perfect for celebrations</p>
+                  <div class="mt-auto pt-6 flex items-center justify-between">
+                    <div>
+                      <span class="text-2xl font-bold text-on-background">₹640</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <div class="flex items-center border border-outline-variant rounded-full h-8 px-2 bg-surface">
+                        <button class="qty-btn text-on-surface-variant font-bold px-1 hover:text-primary transition-colors" onclick="const input = this.nextElementSibling; if(parseInt(input.value) > 1) input.value = parseInt(input.value) - 1">-</button>
+                        <input type="text" value="1" readonly class="w-6 text-center text-xs font-bold bg-transparent border-0 p-0 focus:ring-0 text-on-background" />
+                        <button class="qty-btn text-on-surface-variant font-bold px-1 hover:text-primary transition-colors" onclick="const input = this.previousElementSibling; input.value = parseInt(input.value) + 1">+</button>
+                      </div>
+                      <button class="flex size-8 items-center justify-center rounded-full bg-primary text-white hover:scale-105 transition-all shadow-md" aria-label="Add to Cart" onclick="alert('Added to cart!');">
+                        <span class="material-symbols-outlined text-sm font-bold">shopping_cart</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 4: Refreshment Gallery -->
+            <section class="py-16 px-4" id="section-gallery">
+              <div class="text-center mb-12">
+                <h2 class="text-on-background text-3xl font-headline-lg mb-2">Cool Serving Ideas</h2>
+                <p class="text-on-surface-variant">Discover the many ways to enjoy the exotic bloom</p>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative aspect-square overflow-hidden rounded-3xl bg-surface-container">
+                  <img alt="Summer Picnic Refreshment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A lifestyle photograph of a chilled Amul Kool Rose bottle being enjoyed at a stylish summer picnic. The scene is set on a light linen blanket with fresh berries and a hint of sunlight filtering through green leaves. The lighting is warm and inviting, capturing the essence of a refreshing outdoor break. The color scheme features vibrant pink accents from the beverage label and berries against a neutral cream background, maintaining a premium and modern feel." src="/serving_picnic.png"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                    <p class="text-white font-bold">Perfect for Outdoor Brunches</p>
+                  </div>
+                </div>
+                <div class="group relative aspect-square overflow-hidden rounded-3xl bg-surface-container">
+                  <img alt="Elegant Serving Suggestion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An elegant serving suggestion for Amul Kool Rose, shown in a tall glass with ice cubes and a garnish of a single rose petal. The glass sits on a modern gold coaster atop a marble table. The background is a minimalist, high-end cafe interior with soft, diffused lighting. The color palette is a sophisticated blend of chilled cream, satin gold, and the soft pink of the drink, creating a professional and premium visual experience." src="/serving_cafe.png"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                    <p class="text-white font-bold">Garnish with Fresh Petals</p>
+                  </div>
+                </div>
+                <div class="group relative aspect-square overflow-hidden rounded-3xl bg-surface-container sm:col-span-2 lg:col-span-1">
+                  <img alt="Party Chiller Mode" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A creative shot of several Amul Kool Rose bottles tucked into a designer ice bucket filled with shimmering ice cubes. The lighting is bright and crisp, highlighting the cold condensation and the vibrant colors of the bottles. The setting is a chic rooftop party during sunset, with a soft golden hour glow. The palette is a mix of cool blues from the ice, vibrant rose berry from the bottles, and warm gold highlights from the setting sun." src="/serving_ice_bucket.png"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                    <p class="text-white font-bold">Best Served Ice Cold</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 5: Customer Testimonials -->
+            <section class="py-20 px-4 overflow-hidden scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-testimonials">
+              <div class="text-center mb-12">
+                <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Reviews</span>
+                <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">Loved by Millions</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+              </div>
+
+              <!-- Marquee Track Wrapper -->
+              <div class="relative w-full flex flex-col gap-6 overflow-hidden py-4">
+                
+                <!-- Infinite Horizontal Scrolling List -->
+                <div class="animate-marquee">
+                  <!-- Card 1 -->
+                  <div class="glass-panel w-[320px] rounded-3xl p-6 shrink-0 mx-3 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                      <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold font-label-caps">R</div>
+                      <div>
+                        <h4 class="font-bold text-sm text-on-background">Riya Sharma</h4>
+                        <div class="flex text-amber-500 text-xs">★★★★★</div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                      "Absolutely love the Rose flavor! It is so refreshing, not overly sweet, and tastes like real fresh roses. Perfect summer afternoon drink."
+                    </p>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="glass-panel w-[320px] rounded-3xl p-6 shrink-0 mx-3 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                      <div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-bold font-label-caps">A</div>
+                      <div>
+                        <h4 class="font-bold text-sm text-on-background">Amit Patel</h4>
+                        <div class="flex text-amber-500 text-xs">★★★★★</div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                      "The Kesar flavor is my absolute go-to. It has real saffron threads and is very filling. Best flavoured milk brand in India by far!"
+                    </p>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="glass-panel w-[320px] rounded-3xl p-6 shrink-0 mx-3 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                      <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold font-label-caps">N</div>
+                      <div>
+                        <h4 class="font-bold text-sm text-on-background">Neha Kapoor</h4>
+                        <div class="flex text-amber-500 text-xs">★★★★★</div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                      "Stunning packaging and excellent taste. Elaichi has that perfect cardamom flavor that feels so light and refreshing after meals."
+                    </p>
+                  </div>
+                  <!-- Card 4 -->
+                  <div class="glass-panel w-[320px] rounded-3xl p-6 shrink-0 mx-3 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                      <div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-bold font-label-caps">V</div>
+                      <div>
+                        <h4 class="font-bold text-sm text-on-background">Vikram Malhotra</h4>
+                        <div class="flex text-amber-500 text-xs">★★★★★</div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                      "My kids love the Chocolate flavour! It's rich, creamy and much healthier than regular fizzy drinks. We buy a pack of 12 every week."
+                    </p>
+                  </div>
+
+                  <!-- Duplicate Cards for infinite scroll illusion -->
+                  <div class="glass-panel w-[320px] rounded-3xl p-6 shrink-0 mx-3 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                      <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold font-label-caps">R</div>
+                      <div>
+                        <h4 class="font-bold text-sm text-on-background">Riya Sharma</h4>
+                        <div class="flex text-amber-500 text-xs">★★★★★</div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                      "Absolutely love the Rose flavor! It is so refreshing, not overly sweet, and tastes like real fresh roses. Perfect summer afternoon drink."
+                    </p>
+                  </div>
+                  <div class="glass-panel w-[320px] rounded-3xl p-6 shrink-0 mx-3 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                      <div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-bold font-label-caps">A</div>
+                      <div>
+                        <h4 class="font-bold text-sm text-on-background">Amit Patel</h4>
+                        <div class="flex text-amber-500 text-xs">★★★★★</div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                      "The Kesar flavor is my absolute go-to. It has real saffron threads and is very filling. Best flavoured milk brand in India by far!"
+                    </p>
+                  </div>
+                  <div class="glass-panel w-[320px] rounded-3xl p-6 shrink-0 mx-3 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                      <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold font-label-caps">N</div>
+                      <div>
+                        <h4 class="font-bold text-sm text-on-background">Neha Kapoor</h4>
+                        <div class="flex text-amber-500 text-xs">★★★★★</div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                      "Stunning packaging and excellent taste. Elaichi has that perfect cardamom flavor that feels so light and refreshing after meals."
+                    </p>
+                  </div>
+                  <div class="glass-panel w-[320px] rounded-3xl p-6 shrink-0 mx-3 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                      <div class="w-10 h-10 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-bold font-label-caps">V</div>
+                      <div>
+                        <h4 class="font-bold text-sm text-on-background">Vikram Malhotra</h4>
+                        <div class="flex text-amber-500 text-xs">★★★★★</div>
+                      </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">
+                      "My kids love the Chocolate flavour! It's rich, creamy and much healthier than regular fizzy drinks. We buy a pack of 12 every week."
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Section 6: Social Proof Statistics -->
+            <section class="py-16 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-stats">
+              <div class="max-w-5xl mx-auto rounded-[2.5rem] bg-primary text-white p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-12 -right-12 w-64 h-64 bg-white/5 rounded-full blur-[80px]"></div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center text-center">
+                  <!-- Stat 1 -->
+                  <div class="space-y-2">
+                    <span class="text-4xl sm:text-5xl font-black font-label-caps tracking-tight text-white block"><span class="stat-number" data-target="10">0</span>M+</span>
+                    <span class="text-xs uppercase tracking-widest text-white/70 font-label-caps block">Happy Customers</span>
+                  </div>
+                  <!-- Stat 2 -->
+                  <div class="space-y-2">
+                    <span class="text-4xl sm:text-5xl font-black font-label-caps tracking-tight text-white block"><span class="stat-number" data-target="5000">0</span>+</span>
+                    <span class="text-xs uppercase tracking-widest text-white/70 font-label-caps block">Retail Outlets</span>
+                  </div>
+                  <!-- Stat 3 -->
+                  <div class="space-y-2">
+                    <span class="text-4xl sm:text-5xl font-black font-label-caps tracking-tight text-white block"><span class="stat-number" data-target="100">0</span>+</span>
+                    <span class="text-xs uppercase tracking-widest text-white/70 font-label-caps block">Cities Covered</span>
+                  </div>
+                  <!-- Stat 4 -->
+                  <div class="space-y-2">
+                    <span class="text-4xl sm:text-5xl font-black font-label-caps tracking-tight text-white block"><span class="stat-number" data-target="75">0</span>+</span>
+                    <span class="text-xs uppercase tracking-widest text-white/70 font-label-caps block">Years of Trust</span>
+                  </div>
+                  <!-- Stat 5 -->
+                  <div class="space-y-2 col-span-2 md:col-span-1">
+                    <span class="text-4xl sm:text-5xl font-black font-label-caps tracking-tight text-white block"><span class="stat-number" data-target="99">0</span>%</span>
+                    <span class="text-xs uppercase tracking-widest text-white/70 font-label-caps block">Satisfaction Rate</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 7: Cinematic Video Section -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-video">
+              <div class="text-center mb-12">
+                <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Brand Commercial</span>
+                <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">The Amul Kool Experience</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+              </div>
+
+              <!-- Video Thumbnail Container -->
+              <div class="max-w-4xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl relative aspect-video border-4 border-white group cursor-pointer" onclick="openVideoModal()">
+                <!-- Premium Background image -->
+                <img src="/serving_picnic.png" alt="Video Commercial Background" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                  <!-- Play Button -->
+                  <div class="w-20 h-20 rounded-full bg-primary text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 relative z-10">
+                    <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                  </div>
+                  <!-- Ripple effect -->
+                  <div class="absolute w-20 h-20 rounded-full bg-primary/30 animate-ping"></div>
+                </div>
+                <!-- Ambient Glow and Overlay -->
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent p-8 text-white flex justify-between items-end">
+                  <div>
+                    <h3 class="text-xl font-bold uppercase" style="font-family: 'Playfair Display', serif;">Pure Milk. Real Taste.</h3>
+                    <p class="text-xs text-white/70 mt-1">Watch our new summer campaign commercial (1:30)</p>
+                  </div>
+                  <span class="font-label-caps text-xs tracking-widest uppercase px-3 py-1 bg-white/20 rounded-full">HD 1080p</span>
+                </div>
+              </div>
+
+              <!-- Fullscreen Video Player Modal -->
+              <div id="video-modal" class="fixed inset-0 bg-black/95 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300" role="dialog" aria-modal="true" aria-label="Video Commercial Player">
+                <button class="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Close video" onclick="closeVideoModal()">
+                  <span class="material-symbols-outlined">close</span>
+                </button>
+                <div class="w-full max-w-4xl px-4 aspect-video scale-90 transition-transform duration-300" id="video-modal-container">
+                  <!-- Embed a placeholder loop video or premium clip -->
+                  <iframe class="w-full h-full rounded-2xl shadow-2xl" id="modal-iframe" src="" title="Amul Kool Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 8: Recipes & Serving Ideas -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-recipes">
+              <div class="text-center mb-16">
+                <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Mixology</span>
+                <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">Dessert Recipes & Serving Ideas</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+              </div>
+
+              <!-- Recipe Cards Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <!-- Recipe 1 -->
+                <div class="bg-surface-container-low rounded-3xl border border-outline-variant p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                  <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative">
+                    <img src="/serving_cafe.png" alt="Rose Milkshake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <span class="absolute bottom-3 right-3 bg-black/60 backdrop-blur text-white text-xs px-3 py-1 rounded-full font-label-caps flex items-center gap-1">
+                      <span class="material-symbols-outlined text-xs">schedule</span> 5 mins
+                    </span>
+                  </div>
+                  <h3 class="font-bold text-lg text-on-background">Gourmet Rose Milkshake</h3>
+                  <p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                    Double-chilled Amul Kool Rose blended with a scoop of vanilla ice cream, topped with fresh crushed pistachios.
+                  </p>
+                  <button class="w-full h-10 border border-outline rounded-full text-xs font-bold text-on-background hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 mt-6" onclick="alert('Recipe details coming soon!');">View Recipe</button>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="bg-surface-container-low rounded-3xl border border-outline-variant p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                  <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative">
+                    <img src="/serving_picnic.png" alt="Kesar Ice Cream Float" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <span class="absolute bottom-3 right-3 bg-black/60 backdrop-blur text-white text-xs px-3 py-1 rounded-full font-label-caps flex items-center gap-1">
+                      <span class="material-symbols-outlined text-xs">schedule</span> 7 mins
+                    </span>
+                  </div>
+                  <h3 class="font-bold text-lg text-on-background">Kesar Saffron Float</h3>
+                  <p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                    Pour cold Amul Kool Kesar over a scoop of fresh mango sorbet in a crystal glass. Garnish with mint leaves.
+                  </p>
+                  <button class="w-full h-10 border border-outline rounded-full text-xs font-bold text-on-background hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 mt-6" onclick="alert('Recipe details coming soon!');">View Recipe</button>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="bg-surface-container-low rounded-3xl border border-outline-variant p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                  <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative">
+                    <img src="/serving_ice_bucket.png" alt="Summer Cooler" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <span class="absolute bottom-3 right-3 bg-black/60 backdrop-blur text-white text-xs px-3 py-1 rounded-full font-label-caps flex items-center gap-1">
+                      <span class="material-symbols-outlined text-xs">schedule</span> 3 mins
+                    </span>
+                  </div>
+                  <h3 class="font-bold text-lg text-on-background">Cardamom Cool Punch</h3>
+                  <p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                    Elaichi flavored milk served over crushed ice, layered with basil seeds (sabja) and rose syrup.
+                  </p>
+                  <button class="w-full h-10 border border-outline rounded-full text-xs font-bold text-on-background hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 mt-6" onclick="alert('Recipe details coming soon!');">View Recipe</button>
+                </div>
+
+                <!-- Recipe 4 -->
+                <div class="bg-surface-container-low rounded-3xl border border-outline-variant p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                  <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative">
+                    <img src="/serving_mocha_affogato.png" alt="Coffee Dessert Topping" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    <span class="absolute bottom-3 right-3 bg-black/60 backdrop-blur text-white text-xs px-3 py-1 rounded-full font-label-caps flex items-center gap-1">
+                      <span class="material-symbols-outlined text-xs">schedule</span> 10 mins
+                    </span>
+                  </div>
+                  <h3 class="font-bold text-lg text-on-background">Mocha Affogato Topping</h3>
+                  <p class="text-xs text-on-surface-variant mt-2 leading-relaxed">
+                    Drizzle warm chocolate sauce over coffee flavored Amul Kool, served with double shot espresso chocolate chips.
+                  </p>
+                  <button class="w-full h-10 border border-outline rounded-full text-xs font-bold text-on-background hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 mt-6" onclick="alert('Recipe details coming soon!');">View Recipe</button>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 5: Store Locator -->
+            <!-- Section 12: Smart Store Locator Upgrade -->
+            <section class="py-16 px-4 mb-20" id="section-locator">
+              <div class="bg-surface-container rounded-[2.5rem] p-8 md:p-16 flex flex-col lg:flex-row items-stretch gap-12 overflow-hidden relative shadow-inner">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed blur-[100px] opacity-20 -z-10"></div>
+                <div class="w-full lg:w-1/2 space-y-8 flex flex-col justify-between">
+                  <div class="space-y-4">
+                    <h2 class="text-on-background text-4xl font-headline-lg">Find Your <span class="text-primary">Amul Kool</span></h2>
+                    <p class="text-on-surface-variant text-lg">Use our upgraded interactive locator to find the nearest store carrying your favorite flavours. Freshness is just around the corner.</p>
+                  </div>
+                  
+                  <!-- Upgraded location detection and search bar -->
+                  <div class="space-y-4">
+                    <div class="flex flex-col sm:flex-row gap-3 max-w-md">
+                      <div class="relative flex-1 group">
+                        <input id="store-search-input" class="w-full h-14 pl-12 pr-12 rounded-full border-2 border-outline-variant bg-surface focus:border-primary focus:ring-0 transition-all text-on-background font-body-lg" placeholder="Enter city or pincode" type="text" onkeydown="if(event.key === 'Enter') searchStores()"/>
+                        <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary">location_on</span>
+                        <button id="detect-loc-btn" class="absolute right-3 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-surface-container hover:bg-surface-container-highest flex items-center justify-center text-primary transition-all" type="button" title="Detect Location" onclick="detectUserLocation()">
+                          <span class="material-symbols-outlined text-lg">my_location</span>
+                        </button>
+                      </div>
+                      <button class="h-14 px-6 rounded-full bg-secondary text-white font-bold hover:bg-secondary-container transition-all" type="button" onclick="searchStores()">Search</button>
+                    </div>
+
+                    <!-- Distance and dynamic suggestions -->
+                    <div id="nearby-suggestions" class="space-y-2 mt-4 max-w-md hidden">
+                      <p class="text-xs uppercase font-label-caps text-on-surface-variant tracking-wider font-bold">Nearby Parlors</p>
+                      <div class="space-y-2 max-h-48 overflow-y-auto pr-2" id="suggestions-list">
+                        <!-- Dynamic suggestions will be inserted here -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-6 pt-4">
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-primary" data-weight="fill">storefront</span>
+                      <span class="text-on-surface-variant font-medium">5000+ Retailers</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-primary" data-weight="fill">delivery_dining</span>
+                      <span class="text-on-surface-variant font-medium">Home Delivery</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Real Interactive Map Container -->
+                <div class="w-full lg:w-1/2 aspect-video lg:aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white relative min-h-[350px]">
+                  <div id="map" class="w-full h-full z-0"></div>
+                  <!-- Overlay nearby info -->
+                  <div id="map-overlay-info" class="absolute bottom-4 left-4 p-4 frosted-glass rounded-xl border border-outline-variant max-w-[240px] z-[1000] hidden">
+                    <p class="text-xs font-label-caps text-secondary mb-1">Nearest Store</p>
+                    <p class="text-sm font-bold text-on-background" id="nearest-store-name">Amul Parlor</p>
+                    <p class="text-xs text-on-surface-variant" id="nearest-store-dist">Calculating...</p>
+                    <button class="mt-2 text-xs font-bold text-primary flex items-center gap-1 hover:underline" id="directions-btn" onclick="openDirections()">
+                      <span class="material-symbols-outlined text-xs">navigation</span> Get Directions
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 9: FAQ Accordion -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-faq">
+              <div class="text-center mb-16">
+                <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Got Questions?</span>
+                <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">Frequently Asked Questions</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+              </div>
+
+              <!-- FAQ list container -->
+              <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-outline-variant bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="w-full p-6 text-left flex justify-between items-center font-bold text-on-background text-lg" onclick="toggleFaq(this)">
+                    <span>What is AMUL KOOL?</span>
+                    <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                  </button>
+                  <div class="accordion-content">
+                    <div>
+                      <div class="p-6 pt-0 text-on-surface-variant text-base leading-relaxed">
+                        Amul Kool is a delicious, refreshing sterilized flavoured milk beverage from the house of Amul. Made with high-quality fresh milk and premium natural extracts, it offers healthy nutrition and pure refreshment in every sip.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-outline-variant bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="w-full p-6 text-left flex justify-between items-center font-bold text-on-background text-lg" onclick="toggleFaq(this)">
+                    <span>Is it vegetarian?</span>
+                    <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                  </button>
+                  <div class="accordion-content">
+                    <div>
+                      <div class="p-6 pt-0 text-on-surface-variant text-base leading-relaxed">
+                        Yes, all Amul Kool flavoured milk products are 100% vegetarian. They contain only pure dairy milk, sugar, and natural/nature-identical flavouring ingredients.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-outline-variant bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="w-full p-6 text-left flex justify-between items-center font-bold text-on-background text-lg" onclick="toggleFaq(this)">
+                    <span>How should it be stored?</span>
+                    <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                  </button>
+                  <div class="accordion-content">
+                    <div>
+                      <div class="p-6 pt-0 text-on-surface-variant text-base leading-relaxed">
+                        Amul Kool bottles are sterilized and hermetically sealed, so they can be stored at room temperature before opening. However, we highly recommend chilling them before drinking to experience the ultimate refreshing taste. Once opened, keep refrigerated and consume within 24 hours.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-outline-variant bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="w-full p-6 text-left flex justify-between items-center font-bold text-on-background text-lg" onclick="toggleFaq(this)">
+                    <span>What is the shelf life?</span>
+                    <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                  </button>
+                  <div class="accordion-content">
+                    <div>
+                      <div class="p-6 pt-0 text-on-surface-variant text-base leading-relaxed">
+                        Due to the advanced UHT sterilization processing and secure packaging, unopened Amul Kool bottles have a shelf life of up to 180 days from the date of manufacture. Please check the neck of the bottle for the exact best before date.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="border border-outline-variant bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="w-full p-6 text-left flex justify-between items-center font-bold text-on-background text-lg" onclick="toggleFaq(this)">
+                    <span>Where can I buy it?</span>
+                    <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                  </button>
+                  <div class="accordion-content">
+                    <div>
+                      <div class="p-6 pt-0 text-on-surface-variant text-base leading-relaxed">
+                        Amul Kool is available at all major grocery stores, supermarkets, local Amul parlors, and leading online delivery platforms. You can also order directly through the Buy Online section of this website or use our Store Locator to find a shop near you.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="border border-outline-variant bg-surface-container-low rounded-2xl overflow-hidden transition-all duration-300">
+                  <button class="w-full p-6 text-left flex justify-between items-center font-bold text-on-background text-lg" onclick="toggleFaq(this)">
+                    <span>What flavours are available?</span>
+                    <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                  </button>
+                  <div class="accordion-content">
+                    <div>
+                      <div class="p-6 pt-0 text-on-surface-variant text-base leading-relaxed">
+                        Amul Kool is available in a variety of delicious flavours including Rose, Kesar (Saffron), Elaichi (Cardamom), Badam (Almond), Chocolate, and Coffee.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 10: Instagram Social Wall -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-instagram">
+              <div class="text-center mb-16">
+                <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Social Wall</span>
+                <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">Shared on Instagram</h2>
+                <p class="text-on-surface-variant max-w-md mx-auto mt-3 text-sm">Tag <span class="text-primary font-bold">#AmulKool</span> to get featured on our official aesthetic brand wall.</p>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+              </div>
+
+              <!-- Uniform Grid Layout -->
+              <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 animate-reveal" id="instagram-grid">
+                <!-- Card 1 -->
+                <div class="relative overflow-hidden rounded-3xl group cursor-pointer shadow-md aspect-square" onclick="openInstagramLightbox(0)">
+                  <img src="/instagram_picnic_flatlay.png" alt="Aesthetic Summer Picnic with Amul Kool" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+                  <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6 text-white z-10">
+                    <div class="flex justify-between items-center w-full">
+                      <span class="font-label-caps text-xs tracking-wider">@kool_traveler</span>
+                      <span class="material-symbols-outlined text-sm">favorite</span>
+                    </div>
+                    <div class="text-center my-auto">
+                      <p class="font-bold text-lg" style="font-family: 'Playfair Display', serif;">Golden Sunsets & Rose Sips</p>
+                      <p class="text-xs text-white/80 mt-1">#AmulKool #RoseMilk</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs w-full border-t border-white/20 pt-3">
+                      <span>1,245 Likes</span>
+                      <span>42 Comments</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative overflow-hidden rounded-3xl group cursor-pointer shadow-md aspect-square" onclick="openInstagramLightbox(1)">
+                  <img src="/instagram_cafe_flatlay.png" alt="Elegant Cafe Setting Amul Kool" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+                  <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6 text-white z-10">
+                    <div class="flex justify-between items-center w-full">
+                      <span class="font-label-caps text-xs tracking-wider">@design_latte</span>
+                      <span class="material-symbols-outlined text-sm">favorite</span>
+                    </div>
+                    <div class="text-center my-auto">
+                      <p class="font-bold text-lg" style="font-family: 'Playfair Display', serif;">Midday Luxury Break</p>
+                      <p class="text-xs text-white/80 mt-1">#ExoticRose #AmulKoolGold</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs w-full border-t border-white/20 pt-3">
+                      <span>982 Likes</span>
+                      <span>18 Comments</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="relative overflow-hidden rounded-3xl group cursor-pointer shadow-md aspect-square" onclick="openInstagramLightbox(2)">
+                  <img src="/instagram_beach_refreshment.png" alt="Ice Bucket Party Mode" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+                  <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6 text-white z-10">
+                    <div class="flex justify-between items-center w-full">
+                      <span class="font-label-caps text-xs tracking-wider">@party_chaser</span>
+                      <span class="material-symbols-outlined text-sm">favorite</span>
+                    </div>
+                    <div class="text-center my-auto">
+                      <p class="font-bold text-lg" style="font-family: 'Playfair Display', serif;">Chilled to Perfection</p>
+                      <p class="text-xs text-white/80 mt-1">#SummerVibes #IceCold</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs w-full border-t border-white/20 pt-3">
+                      <span>2,118 Likes</span>
+                      <span>89 Comments</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="relative overflow-hidden rounded-3xl group cursor-pointer shadow-md aspect-square" onclick="openInstagramLightbox(3)">
+                  <img src="/instagram_cozy_aesthetic.png" alt="Rose Milkshake Dessert" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+                  <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6 text-white z-10">
+                    <div class="flex justify-between items-center w-full">
+                      <span class="font-label-caps text-xs tracking-wider">@gourmet_sweet</span>
+                      <span class="material-symbols-outlined text-sm">favorite</span>
+                    </div>
+                    <div class="text-center my-auto">
+                      <p class="font-bold text-lg" style="font-family: 'Playfair Display', serif;">Dessert Mixology</p>
+                      <p class="text-xs text-white/80 mt-1">#RoseShake #AmulKoolRecipies</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs w-full border-t border-white/20 pt-3">
+                      <span>1,432 Likes</span>
+                      <span>53 Comments</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="relative overflow-hidden rounded-3xl group cursor-pointer shadow-md aspect-square" onclick="openInstagramLightbox(4)">
+                  <img src="/instagram_workout_gym.png" alt="Aesthetic Summer Picnic Close-up" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+                  <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6 text-white z-10">
+                    <div class="flex justify-between items-center w-full">
+                      <span class="font-label-caps text-xs tracking-wider">@outdoor_vibes</span>
+                      <span class="material-symbols-outlined text-sm">favorite</span>
+                    </div>
+                    <div class="text-center my-auto">
+                      <p class="font-bold text-lg" style="font-family: 'Playfair Display', serif;">Nature & Pure Refreshment</p>
+                      <p class="text-xs text-white/80 mt-1">#DairyFresh #AmulKool</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs w-full border-t border-white/20 pt-3">
+                      <span>874 Likes</span>
+                      <span>21 Comments</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="relative overflow-hidden rounded-3xl group cursor-pointer shadow-md aspect-square" onclick="openInstagramLightbox(5)">
+                  <img src="/instagram_party_sparklers.png" alt="Condensation Refreshment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+                  <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-6 text-white z-10">
+                    <div class="flex justify-between items-center w-full">
+                      <span class="font-label-caps text-xs tracking-wider">@kool_style</span>
+                      <span class="material-symbols-outlined text-sm">favorite</span>
+                    </div>
+                    <div class="text-center my-auto">
+                      <p class="font-bold text-lg" style="font-family: 'Playfair Display', serif;">Always Chilled, Always Kool</p>
+                      <p class="text-xs text-white/80 mt-1">#GoldStandard #RosePetals</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs w-full border-t border-white/20 pt-3">
+                      <span>3,412 Likes</span>
+                      <span>112 Comments</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fullscreen Lightbox Carousel Modal -->
+              <div id="instagram-lightbox" class="fixed inset-0 bg-black/95 z-[9999] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300" role="dialog" aria-modal="true" aria-label="Instagram Photo Lightbox">
+                <!-- Close Button -->
+                <button class="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Close Lightbox" onclick="closeInstagramLightbox()">
+                  <span class="material-symbols-outlined text-2xl">close</span>
+                </button>
+                <!-- Nav Prev Button -->
+                <button class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/5 text-white flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Previous image" onclick="prevInstagramImage()">
+                  <span class="material-symbols-outlined text-3xl">chevron_left</span>
+                </button>
+                <!-- Nav Next Button -->
+                <button class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/5 text-white flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Next image" onclick="nextInstagramImage()">
+                  <span class="material-symbols-outlined text-3xl">chevron_right</span>
+                </button>
+                <!-- Slide Container -->
+                <div class="flex flex-col items-center max-w-4xl px-4">
+                  <img id="lightbox-img" src="" alt="Instagram Lightbox View" class="max-w-full max-h-[75vh] object-contain rounded-2xl shadow-2xl border border-white/10" />
+                  <div class="text-center mt-4 space-y-1">
+                    <p id="lightbox-user" class="font-label-caps text-xs tracking-wider text-primary font-bold"></p>
+                    <p id="lightbox-caption" class="text-white font-medium text-sm sm:text-base"></p>
+                    <p id="lightbox-likes" class="text-white/60 text-xs"></p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 11: Newsletter Section -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-newsletter">
+              <div class="max-w-4xl mx-auto bg-surface-container-low rounded-[2.5rem] py-16 px-8 text-center shadow-sm relative overflow-hidden">
+                <!-- Background visual accents matching the rose/gold theme -->
+                <div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-12 -right-12 w-48 h-48 bg-secondary/5 rounded-full blur-3xl"></div>
+
+                <div class="max-w-xl mx-auto space-y-6 relative z-10">
+                  <span class="font-label-caps text-xs text-primary font-bold tracking-widest uppercase">Join the Club</span>
+                  <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg">Subscribe to Kool Updates</h2>
+                  <p class="text-on-surface-variant text-base">Be the first to hear about new flavour launches, exclusive merchandise drops, and special offers from Amul Kool.</p>
+                  
+                  <!-- Form with slide state -->
+                  <form id="newsletter-form" onsubmit="handleNewsletterSubmit(event)" class="mt-8 flex flex-col sm:flex-row gap-4 items-stretch justify-center">
+                    <div class="relative flex-1">
+                      <input type="email" id="newsletter-email" placeholder="Your Email Address" required class="w-full bg-transparent border-b-2 border-outline-variant py-3 px-4 text-on-background focus:outline-none focus:border-primary transition-colors placeholder:text-on-surface-variant/40 text-lg" />
+                    </div>
+                    <button type="submit" class="py-4 px-8 bg-primary hover:bg-primary-container text-white rounded-full font-bold transition-all shadow-md flex items-center justify-center gap-2 hover:scale-105 active:scale-95">
+                      Subscribe <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                  </form>
+
+                  <!-- Premium Success Animation -->
+                  <div id="newsletter-success" class="hidden flex flex-col items-center gap-4 text-center mt-6">
+                    <div class="checkmark-svg-wrapper">
+                      <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                      </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-on-background" style="font-family: 'Playfair Display', serif;">Welcome to the Inner Circle!</h3>
+                    <p class="text-on-surface-variant text-sm">Thank you for subscribing. A validation coupon has been sent to your email.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 15: Contact Us -->
+            <section class="py-20 px-4 scroll-reveal transition-all duration-1000 opacity-0 translate-y-10" id="section-contact">
+              <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                  <span class="font-label-caps text-xs tracking-widest uppercase text-primary font-bold">Connect With Us</span>
+                  <h2 class="text-on-background text-3xl sm:text-4xl font-headline-lg mt-2">Get in Touch</h2>
+                  <div class="w-20 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                  <!-- Form Column -->
+                  <div class="bg-surface-container-low rounded-[2.5rem] p-8 sm:p-10 shadow-sm flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl"></div>
+                    
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-6 relative z-10">
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                          <label for="contact-name" class="font-label-caps text-xs text-on-surface-variant font-bold uppercase tracking-wider">Your Name</label>
+                          <input type="text" id="contact-name" placeholder="John Doe" required class="w-full bg-surface-container-lowest border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-xl py-3 px-4 text-on-background outline-none transition-all placeholder:text-on-surface-variant/40" />
+                        </div>
+                        <div class="space-y-2">
+                          <label for="contact-email" class="font-label-caps text-xs text-on-surface-variant font-bold uppercase tracking-wider">Email Address</label>
+                          <input type="email" id="contact-email" placeholder="john@example.com" required class="w-full bg-surface-container-lowest border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-xl py-3 px-4 text-on-background outline-none transition-all placeholder:text-on-surface-variant/40" />
+                        </div>
+                      </div>
+                      
+                      <div class="space-y-2">
+                        <label for="contact-subject" class="font-label-caps text-xs text-on-surface-variant font-bold uppercase tracking-wider">Subject</label>
+                        <input type="text" id="contact-subject" placeholder="Wholesale Inquiry / Feedback" required class="w-full bg-surface-container-lowest border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-xl py-3 px-4 text-on-background outline-none transition-all placeholder:text-on-surface-variant/40" />
+                      </div>
+
+                      <div class="space-y-2">
+                        <label for="contact-message" class="font-label-caps text-xs text-on-surface-variant font-bold uppercase tracking-wider">Message</label>
+                        <textarea id="contact-message" rows="5" placeholder="Tell us how we can help you..." required class="w-full bg-surface-container-lowest border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary rounded-xl py-3 px-4 text-on-background outline-none transition-all placeholder:text-on-surface-variant/40 resize-none"></textarea>
+                      </div>
+
+                      <button type="submit" class="w-full py-4 bg-primary hover:bg-primary-container text-white rounded-xl font-bold transition-all shadow-md flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]">
+                        Send Message <span class="material-symbols-outlined text-sm">send</span>
+                      </button>
+                    </form>
+
+                    <!-- Contact Success State -->
+                    <div id="contact-success" class="hidden flex flex-col items-center justify-center h-full text-center p-6 space-y-4">
+                      <div class="checkmark-svg-wrapper">
+                        <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                          <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                          <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                        </svg>
+                      </div>
+                      <h3 class="text-2xl font-bold text-on-background" style="font-family: 'Playfair Display', serif;">Message Received!</h3>
+                      <p class="text-on-surface-variant max-w-md">Our premium concierge team has received your message and will respond within 12 business hours.</p>
+                      <button type="button" onclick="resetContactForm()" class="mt-4 text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                        <span class="material-symbols-outlined text-xs">arrow_back</span> Send another message
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Details Column -->
+                  <div class="space-y-8 flex flex-col justify-between">
+                    <!-- Info Card -->
+                    <div class="bg-surface-container-low rounded-[2.5rem] p-8 shadow-sm space-y-6">
+                      <h3 class="text-xl font-bold text-on-background" style="font-family: 'Playfair Display', serif;">Official Headquarters</h3>
+                      
+                      <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                          <span class="material-symbols-outlined text-primary bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant">location_on</span>
+                          <div>
+                            <p class="font-bold text-on-background text-sm">Amul Dairy Road</p>
+                            <p class="text-on-surface-variant text-xs mt-1">Anand, Gujarat 388001, India</p>
+                          </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                          <span class="material-symbols-outlined text-primary bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant">call</span>
+                          <div>
+                            <p class="font-bold text-on-background text-sm">Call Center Support</p>
+                            <p class="text-on-surface-variant text-xs mt-1">+91 1800 258 3333 (Toll Free)</p>
+                          </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                          <span class="material-symbols-outlined text-primary bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant">mail</span>
+                          <div>
+                            <p class="font-bold text-on-background text-sm">Email Inquiries</p>
+                            <p class="text-on-surface-variant text-xs mt-1">kool@amul.coop / sales@amul.coop</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Wholesale Card -->
+                    <div class="bg-surface-container-low rounded-[2.5rem] p-8 shadow-sm space-y-4 relative overflow-hidden border border-secondary/20">
+                      <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-secondary/10 rounded-full blur-xl"></div>
+                      <h3 class="text-lg font-bold text-on-background flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary">business_center</span> Wholesale & Parlor Inquiries
+                      </h3>
+                      <p class="text-on-surface-variant text-sm">Interested in becoming an authorized Amul Parlor owner or wholesale distributor? We offer premium margins and marketing support.</p>
+                      <button type="button" onclick="document.getElementById('contact-subject').value = 'Wholesale & Parlor Partnership Inquiry'; document.getElementById('contact-name').focus();" class="text-xs font-bold text-secondary flex items-center gap-1 hover:underline group">
+                        Apply for Partnership <span class="material-symbols-outlined text-xs group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Footer Area -->
+            <footer class="border-t border-outline-variant py-12 px-10" id="footer">
+              <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                <div class="space-y-4">
+                  <div class="flex items-center gap-3 text-primary">
+                    <div class="size-8">
+                      <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"></path>
+                      </svg>
+                    </div>
+                    <h3 class="text-2xl font-display-lg text-on-background">Amul Kool</h3>
+                  </div>
+                  <p class="text-on-surface-variant max-w-xs font-body-sm">Providing the freshest and most delicious milk drinks for generations. Experience the gold standard of refreshment.</p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+                  <div class="space-y-4">
+                    <h4 class="font-bold text-on-background uppercase tracking-wider text-xs">Explore</h4>
+                    <ul class="space-y-2 text-on-surface-variant font-body-sm">
+                      <li><a class="hover:text-primary transition-colors" href="#">All Flavors</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Nutritional Info</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Our History</a></li>
+                    </ul>
+                  </div>
+                  <div class="space-y-4">
+                    <h4 class="font-bold text-on-background uppercase tracking-wider text-xs">Support</h4>
+                    <ul class="space-y-2 text-on-surface-variant font-body-sm">
+                      <li><a class="hover:text-primary transition-colors" href="#">Store Locator</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Bulk Orders</a></li>
+                    </ul>
+                  </div>
+                  <div class="space-y-4">
+                    <h4 class="font-bold text-on-background uppercase tracking-wider text-xs">Legal</h4>
+                    <ul class="space-y-2 text-on-surface-variant font-body-sm">
+                      <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Terms of Use</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-16 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-on-surface-variant text-sm">© 2024 Amul Dairy. All rights reserved.</p>
+                <div class="flex gap-6">
+                  <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">social_leaderboard</span>
+                  <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">share</span>
+                  <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">language</span>
+                </div>
+              </div>
+            </footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 16: Floating Widgets -->
+    <div id="floating-widgets" class="fixed bottom-6 right-6 z-[9999] flex flex-col gap-3">
+      <!-- WhatsApp Concierge Widget -->
+      <a href="https://wa.me/9118002583333" target="_blank" rel="noopener noreferrer" class="floating-action-btn w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all group relative" aria-label="Chat on WhatsApp">
+        <svg class="size-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.063 5.321 5.388.001 11.931 0 15.1.001 18.067 1.24 20.306 3.482c2.238 2.24 3.472 5.211 3.47 8.384-.006 6.537-5.332 11.857-11.874 11.857-2.007-.001-3.98-.51-5.738-1.483L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.747 1.45 5.397.002 9.79-4.385 9.793-9.774.002-2.611-1.015-5.065-2.868-6.917C16.417 2.058 13.97 1.042 11.93 1.043 6.536 1.045 2.143 5.433 2.14 10.824c-.001 1.625.469 3.213 1.36 4.606l-.997 3.639 3.738-.977l-.196.162z"/>
+        </svg>
+        <span class="absolute right-full mr-3 px-3 py-1 bg-on-background text-white text-xs font-bold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap shadow-md">Chat with Us</span>
+      </a>
+
+      <!-- Call Concierge Widget -->
+      <a href="tel:+9118002583333" class="floating-action-btn w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-secondary text-white flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all group relative" aria-label="Call Customer Concierge">
+        <span class="material-symbols-outlined text-2xl">call</span>
+        <span class="absolute right-full mr-3 px-3 py-1 bg-on-background text-white text-xs font-bold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap shadow-md">Call Concierge</span>
+      </a>
+
+      <!-- Scroll to Top Widget -->
+      <button id="btn-scroll-top" onclick="scrollToTop()" class="floating-action-btn w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary text-white flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all opacity-0 translate-y-10 pointer-events-none group relative" aria-label="Scroll to top">
+        <span class="material-symbols-outlined text-2xl">arrow_upward</span>
+        <span class="absolute right-full mr-3 px-3 py-1 bg-on-background text-white text-xs font-bold rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap shadow-md">Scroll to Top</span>
+      </button>
+    </div>
+
+    <!-- Core Scripts -->
+    <script type="module" src="/src/main.js"></script>
+    
+    <!-- External Interactive Scripts from code.html -->
+    <script>
+      // Simple intersection observer for reveal animations on website sections
+      const observerOptions = {
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100');
+            entry.target.classList.remove('translate-y-10');
+            entry.target.classList.remove('opacity-0');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('#website-content section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+        observer.observe(section);
+      });
+
+      // Microinteraction for search input glow
+      const searchInput = document.querySelector('input[placeholder="Search"]');
+      if (searchInput) {
+        searchInput.addEventListener('focus', () => {
+          searchInput.parentElement.classList.add('ring-2', 'ring-primary/20');
+        });
+        searchInput.addEventListener('blur', () => {
+          searchInput.parentElement.classList.remove('ring-2', 'ring-primary/20');
+        });
+      }
+    </script>
+  </body>
+</html>
